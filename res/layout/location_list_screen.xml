@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/locationsLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/sortSpn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:background="@drawable/header_bg" android:layout_marginTop="10dip" android:layout_marginRight="5dip" android:layout_marginLeft="10dip" android:layout_marginBottom="10dip" android:padding="10dip"/>
+
+        <Button
+            android:id="@+id/mapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map" android:layout_weight="1" android:layout_marginTop="10dip" android:layout_marginBottom="10dip" android:layout_marginLeft="5dip" android:layout_marginRight="10dip" android:background="@drawable/header_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <ImageView android:id="@+id/locationIconIV" android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_marginRight="10dip" android:layout_marginTop="10dip"></ImageView>
+
+    <RatingBar
+        android:id="@+id/locationRatingRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_below="@+id/locationDistanceTV" android:layout_marginTop="5dip" android:maxHeight="25dip" style="?android:attr/ratingBarStyleSmall"/>
+
+    <TextView
+        android:id="@+id/locationNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/locationIconIV"
+        android:layout_marginLeft="10dip"
+        android:text="Name" android:layout_marginTop="10dip"/>
+
+    <TextView
+        android:id="@+id/locationDistanceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationNameTV"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:layout_alignParentLeft="true" android:layout_marginLeft="10dip"/>
+
+    <TextView
+        android:id="@+id/locationTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationNameTV"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/locationDistanceTV"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</RelativeLayout>

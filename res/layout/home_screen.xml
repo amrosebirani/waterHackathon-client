@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:apiKey="087Z0umIqqzx1iWdD5K0KkA8AlsXZzboX9GS-3A"
+        android:minHeight="100dip"
+    />
+
+  <Button
+      android:id="@+id/findBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="10dip"
+      android:background="@drawable/header_bg"
+      android:padding="20dip"
+      android:text="Find Restrooms" />
+    
+</LinearLayout>

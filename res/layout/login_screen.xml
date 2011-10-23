@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:text="Water Hackathon"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Login Into XXX System" android:layout_gravity="center_horizontal"></TextView>
+    <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center">
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/userNameET" android:hint="User name" android:layout_margin="10dip" android:imeOptions="actionNext"></EditText>
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/passwordET" android:hint="Password" android:layout_margin="10dip" android:inputType="textPassword" android:imeOptions="actionDone"></EditText>
+        <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:gravity="center">
+            <Button android:id="@+id/signUpBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/header_bg" android:text="Sign up" android:layout_weight="1" android:layout_marginRight="5dip" android:layout_marginLeft="10dip" android:textColor="@color/dark_gray"></Button>
+            <Button android:id="@+id/resetPasswordBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/header_bg" android:text="Reset Password" android:layout_weight="1" android:layout_marginLeft="5dip" android:layout_marginRight="10dip" android:textColor="@color/dark_gray"></Button>
+        </LinearLayout>
+        <Button android:id="@+id/loginBtn" android:layout_height="wrap_content" android:text="Login" android:background="@drawable/header_bg" android:layout_margin="10dip" android:layout_width="match_parent" android:textColor="@color/dark_gray"></Button>
+    </LinearLayout>
+    
+</LinearLayout>
